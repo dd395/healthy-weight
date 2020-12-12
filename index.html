@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Weight</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="modal.css" rel="stylesheet" type="text/css"/>
+    <link href="quiz.css" rel="stylesheet" type="text/css"/>
+    <link href="weight.css" rel="stylesheet" type="text/css"/>
+    <link href="summary.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <h1>Healthy Weight</h1>
+</header>
+</div>
+<nav>
+    <a href ="index.html">Home</a>
+    <a href = "weight.html">Calculator</a>
+    <a href = "summary.html">Additional Resources</a>
+</nav>
+<button id="modalBtn" class ="button">Welcome</button>
+<div id="simpleModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+        <span class ="closeBtn">&times;</span>
+            <h2>Welcome</h2>
+            <div class="modal-body">
+        <p>Welcome! The purpose of this site is to provide guidance on achieving a healthy weight. Know your numbers!</p>
+        <p>To get started take the quiz, review the terms, use the calculator to calculate and review your healthy weight results. To learn more check out additional resources.</p>
+        <p>Thank you for visiting! Enjoy the music!</p>
+     </div>
+    <div class="modal-footer">
+        <h3>Always seek professional advice from your doctor.</h3>
+    </div>
+        </div>
+    </div>
+</div>
+<button class = "toggle-button" aria-controls ="toggle-content">
+    Show Quiz
+</button>
+<div id="toggle-content" class="toggle-content" aria-hidden="true">
+<h1> Take the quiz</h1>
+<div class="grid">
+    <div id ="quiz">
+        <h1>Quiz</h1>
+        <hr style="margin-bottom: 20px">
+        <p id="question"></p>
+        <div class = "buttons">
+            <button id="btn0"><span id="choice0"></span></button>
+            <button id="btn1"><span id="choice1"></span></button>
+            <button id="btn2"><span id="choice2"></span></button>
+            <button id="btn3"><span id="choice3"></span></button>
+        </div>
+        <hr style ="margin-top: 50px">
+        <footer>
+            <p id="progress">Question x of y</p>
+        </footer>
+    </div>
+</div>
+</div>
+<div>
+    <h1>Healthy Terms</h1>
+    <ol class="glossary">
+        <li>BMI: Body mass index (BMI) is an estimate of the body’s fat content, calculated from measurements of height and weight and are used to determine if your weight is healthy. A healthy BMI is 24.9.</li><br>
+        <li>Waist measurements: Carrying excess body fat around your middle is more of a health risk than if weight is on your hips and thighs. Waist circumference is a better estimate of visceral fat, the dangerous internal fat that coats the organs. It is therefore a more accurate predictor of cardiovascular, type 2 diabetes, cancer and stroke risks.</li><br>
+        <li>Women waist measurements: Measurements greater than 35 inches increases risk of  health problems even if at a healthy weight.</li><br>
+        <li>Men waist measurements: Measurements greater than 40 inches increases risk of health problems even if at a healthy weight.</li><br>
+        <li>BMR: Basal metabolic rate (BMR) is the rate at which the body uses energy while at rest to keep vital functions going, such as breathing and keeping warm.</li><br>
+        <li> TDEE: Total Daily Energy Expenditure(TDEE) is the total amount of energy that the body burns with corresponding activity level.</li><br>
+        <li>Activity Level: BMR is multiplied by corresponding activity level to determine TDEE(activity level in parenthesis).</li>
+        <ul>
+            <li>Sedentary- People who work desk jobs and engage in very little exercise or chores.(1.2)</li>
+            <li>Lightly active - People who do chores and go on long walks/engage in exercise at least 1 to 3 days in a week.(1.375)</li>
+            <li>Moderately active -	People who move a lot during the day and workout (moderate effort) at least 3 to 5 days in a week. (1.55)</li>
+            <li>Very active - People who play sports or engage in vigorous exercise on most days.(1.725)</li>
+            <li>Extra active - People who do intense workouts 6 to 7 days a week with work that demands physical activity.(1.9)</li>
+          </ul><br>
+         <li>When trying to lose/gain weight, a general rule of thumb is to reduce/increase your calorie intake by 500 calories than your body needs (TDEE) to maintain your current weight.
+            This will help you lose/gain about 1 pound (0.45 kg) of body weight per week.</li><br>
+         <li>Water: Water is your body's principal chemical component and makes up about 50% to 70% of your body weight. Your body depends on water to survive. The U.S. National Academies of Sciences, Engineering, and Medicine determined that an adequate daily fluid intake is:</li>
+        <ul>
+            <li>15.5 cups (3.7 liters) of fluids a day for men</li>
+            <li>11.5 cups (2.7 liters) of fluids a day for women</li>
+        </ul><br>
+        <li>Check out additional resources for insights on exercise, nutrition and music.</li><br>
+        <li>Professional Advice: Always consult with your doctor because there are many factors that can affect your healthy weight.</li>
+</ol>
+</div>
+<audio controls="controls">
+    <source src ="music/Wynton-Marsalis-Sunflowers.mp3"  type="audio/mpeg">
+    <source src ="music/04-Here-Comes-the-Sun.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="code.js"></script>
+<script src="quiz_controller.js"></script>
+<script src="question.js"></script>
+<script src="app.js"></script>
+<script src="modal.js"></script>
+<script src="weight.js"></script>
+
+
+</body>
+</html>
